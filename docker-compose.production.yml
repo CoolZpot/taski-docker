@@ -33,6 +33,7 @@ services:
   gateway:
     image: coolzpot/taski_gateway
     env_file: .env
+    depends_on: backend
     volumes:
       - static_volume:/staticfiles/
     ports:
